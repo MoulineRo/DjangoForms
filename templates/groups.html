@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Groups</title>
+</head>
+<body>
+<form action="/groups/" method="get">
+</form>
+<ul>
+    {% for contractor in people %}
+ <option value="{{ contractor }}">{{ contractor }}</option>
+ {% endfor %}
+</ul>
+</body>
+</html>
