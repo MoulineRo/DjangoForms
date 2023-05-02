@@ -9,7 +9,15 @@
 </form>
 <ul>
     {% for contractor in people %}
- <option value="{{ contractor }}">{{ contractor }}</option>
+
+    <p></p>
+    <option value="{{ contractor.name }}">{{ contractor.name }}</option>
+    <option value="{{ contractor.surname }}">{{ contractor.surname }}</option>
+    <option value="{{ contractor.lastname }}">{{ contractor.lastname }}</option>
+    <option value="{{ contractor.birthday }}">{{ contractor.birthday }}</option>
+    <option value="{{ contractor.theme }}">{{ contractor.theme }}</option>
+    <p></p>
+
  {% endfor %}
 </ul>
 </body>
